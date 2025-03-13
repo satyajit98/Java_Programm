@@ -1,0 +1,4 @@
+//Create a class Program 1 and declare 2 non-static variable, assign with a suitable constructor.(local and non-static variables names different).
+//Create a class Program 2 and declare 2 non-static variable, assign with a suitable constructor.(local and non-static variables names same).
+//Create a class Program 3 and declare 3 non-static variables, create a no arguement constructor, and check what happens with the values by creating the object.(check with default as well as programmer created constructor also).
+//Create a class Program 4 and create 3 objects and print the reference of current object in non static method.

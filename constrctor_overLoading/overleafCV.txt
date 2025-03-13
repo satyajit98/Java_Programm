@@ -1,0 +1,207 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-0.8in}
+\addtolength{\textheight}{1.6in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated PDF is machine-readable/ATS-parsable
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \ifx\empty#3\empty\else\textit{\small#3} \\ \fi
+      \ifx\empty#4\empty\else\textit{\small#4} \\ \fi
+    \end{tabular*}\vspace{-10pt}
+}
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-20pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-20pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-1pt}}
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.1in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-7pt}}
+
+% RESUME STARTS HERE
+\begin{document}
+
+% HEADING
+\begin{center}
+    {\Huge \scshape Suman Kumar Mishra} \\ \vspace{1pt}
+    Bhubaneswar, Odisha, 751010 \\ \vspace{1pt}
+    \small \raisebox{-0.2\height}{\faPhone\ +91 9308208779} ~ \href{mailto:kmsuman27@gmail.com}{\raisebox{-0.2\height}{\textcolor{blue}{\faEnvelope\ \underline{kmsuman27@gmail.com}}}} ~ 
+    \href{https://linkedin.com/in/suman-kumar-mishra-cloud}{\raisebox{-0.2\height}{\textcolor{blue}{\faLinkedin\ \underline{suman-kumar-mishra-cloud}}}} ~
+    \href{https://github.com/kmsuman2705}{\raisebox{-0.2\height}{\textcolor{blue}{\faGithub\ \underline{kmsuman2705}}}}
+    \vspace{-10pt}
+\end{center}
+
+\section{Projects}
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Ollama WebUI Integration}{Aug 2024}{}{}
+    \resumeItemListStart
+        \resumeItem{Created a WebUI for managing models using Ollama and LLaMA.}
+        \resumeItem{Deployed with Docker and automated using CI/CD pipelines for easier scaling and management.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+        {Website Chatbot Integration}{Jun -- Jul 2024}{}{}
+    \resumeItemListStart
+        \resumeItem{Built a chatbot for a website using OpenAI's GPT for real-time conversations.}
+        \resumeItem{Developed a Flask-based API and used web scraping to provide relevant responses.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+        {Cloud-based DevOps Automation}{May 2024}{}{}
+    \resumeItemListStart
+        \resumeItem{Set up CI/CD pipelines using Jenkins and GitHub Actions for applications hosted on AWS and Azure.}
+        \resumeItem{Used Terraform to manage cloud resources and deployed apps using Kubernetes for better scalability.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\vspace{-15pt}
+% WORK EXPERIENCE
+\section{Work Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+    {TalentConnects}{Sept 2024 – Nov 2024}{}{} 
+    \resumeItemListStart
+        \resumeItem{Deployed a full-stack MERN application on AWS, utilizing AWS Savings Plan for cost savings.}
+        \resumeItem{Containerized the app with Docker and used MongoDB for the database.}
+        \resumeItem{Set up an Ubuntu server with load balancing, private VPC, and Route 53 for DNS management.}
+    \resumeItemListEnd
+\resumeSubheading
+    {Real IT Solutions}{Nov 2024 – Present}{}{}
+    \resumeItemListStart
+        \resumeItem{Managed daily server operations, ensuring timely server start-ups and smooth deployments.}
+        \resumeItem{Automated server deployment and maintenance processes using shell scripts.}
+        \resumeItem{Handled the infrastructure management, ensuring high availability and reliability.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% TECHNICAL SKILLS
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.10in, label={}]
+    \setlength\itemsep{-0.10em} % Reduce space between items
+    \item \textbf{Cloud Computing}:
+        \begin{itemize}
+            \setlength\itemsep{-0.20em} % Reduce space between items
+            \item \textbf{AWS}: EC2, S3, VPC, RDS, IAM, CloudWatch, SNS, Lambda, Load Balancer
+            \item \textbf{Azure}: VMs, Blob Storage, VNet, Load Balancer
+            \item \textbf{GCP}: Google Compute Engine, App Engine, Cloud run, vpc , cloud sql, IAM, CloudWatch, gke,GCS, Load Balancer
+        \end{itemize}
+    \item \textbf{Programming}: Python
+    \item \textbf{Containerization}: Docker, Podman
+    \item \textbf{Version Control}: Git, GitHub
+    \item \textbf{Tools}: Linux, Ubuntu, Terraform, Kubernetes, Jenkins, MySQL, MongoDB, Machine Learning, Gen AI, Ollama
+\end{itemize}
+
+% SOFT SKILLS
+\section{Soft Skills}
+\begin{itemize}[leftmargin=0.10in, label={\tiny$\bullet$}]
+    \setlength\itemsep{-0.4em} % Reduce space between items
+    \item Strong problem-solving abilities
+    \item Excellent communication and teamwork skills
+    \item Quick adaptability and continuous learning
+\end{itemize}
+
+% INTERNSHIPS
+\section{Internships}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Linux World}{Feb 2023 -- Mar 2023}  {\textit{45-day Internship}}{}
+\resumeItemListStart
+    \resumeItem{Worked on Docker, AWS, and Linux-based projects, improving operational workflows.}
+    \resumeItem{Developed and optimized Docker containers for both development and production environments.}
+    \resumeItem{Conducted training sessions on cloud technologies and containerization for internal teams.}
+    \resumeItem{\href{https://drive.google.com/file/d/1wjX8wlgrshj1XUPcrGTR9Ud1zr3UYwmj/view?usp=sharing}{\textcolor{blue}{Certificate Link}}}
+\resumeItemListEnd
+
+\resumeSubheading
+{IBM India Pvt. Ltd}{May 2024 -- Oct 2024} {\textit{AI/ML Intern}}{}
+\resumeItemListStart
+    \resumeItem{Developed emotion detection, chatbot, and face recognition models using deep learning.}
+    \resumeItem{Worked with large datasets and optimized ML models to improve accuracy and performance.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+% EDUCATION
+\section{Education}
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Millennium Group of Institutions}{2023 -- 2026}
+        {Bachelor of Technology (B.Tech) - Computer Science and Engineering (CSE)}{}
+    
+    \resumeSubheading
+        {NSTI Bhubaneswar}{Sep 2022 -- Aug 2023}
+        {Advanced Diploma in IT}{}
+    
+    \resumeSubheading
+        {Govt Polytechnic}{Jul 2020 -- Aug 2022}
+        {Diploma in Engineering}{}
+
+\resumeSubHeadingListEnd
+
+% INTEREST / EXTRACURRICULAR
+\section{Interest / Extracurricular}
+\resumeSubHeadingListStart
+\resumeSubheading{Technical Blog Writer:  \href{https://hashnode.com/@kmsuman27}{\textcolor{blue}{Hashnode}}}{Jul 2023 -- Present}{}{}
+\resumeSubHeadingListEnd
+
+\end{document}
